@@ -4,29 +4,15 @@
      ..*█▄▀ █ █░▀░█ █ ░█░ █▀▄ █ ▀▀█ ▄█ █▄▄ █▀█ █▄█ █▄█ █▄▄*✶.
                                  github:DimitriFromSchool::.
   ────────────────────────────────────────────────────────────
-           Project: ft_strlen.c
-                      Created: 2024-05-16, 21:30:15 |
-                      Updated: 2024-05-16, 21:54:58 | 
+           Project: ft_memset.c
+                      Created: 2024-05-16, 21:49:35 |
+                      Updated: 2024-05-16, 21:50:52 | 
   ────────────────────────────────────────────────────────────
  */
 
 #include <stdio.h>
 
-size_t  ft_strlen(const char *s)
+void *memset(void *s, int c, size_t n)
 {
-    size_t i;
-    i = 0;
-    while (s[i] != '\0')
-    {
-        i++;
-    }
-    return (i);
-}
-
-int main(void)
-{
-    char quote[] = "Hello World";
     
-    printf("La chaine contient : %li charactère(s)", ft_strlen(quote));
-    return (0);
 }
