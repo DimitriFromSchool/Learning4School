@@ -4,31 +4,21 @@
      ..*█▄▀ █ █░▀░█ █ ░█░ █▀▄ █ ▀▀█ ▄█ █▄▄ █▀█ █▄█ █▄█ █▄▄*✶.
                                  github:DimitriFromSchool::.
   ────────────────────────────────────────────────────────────
-           Project: ft_isalpha.c
-                      Created: 2024-05-10, 14:58:01 |
-                      Updated: 2024-05-16, 20:44:13 | 
+           Project: ft_strlen.c
+                      Created: 2024-05-16, 21:30:15 |
+                      Updated: 2024-05-16, 21:35:45 | 
   ────────────────────────────────────────────────────────────
  */
 
-#include <stdio.h> 
+#include <stdio.h>
 
-int ft_isalpha(int c)
+size_t  strlen(const char *s)
 {
-  if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
-    return (1);
-  else
-    return (0);
-}
-
-int main (void)
-{
-  int letter;
-  letter = 65;
-
-  if (ft_isalpha(letter)== 1)
-    printf("Il s'agit bien de la lettre :  %c", letter);
-  else
-    printf("Ceci n'est pas une lettre");
-  
-  return (0);
+    size_t i;
+    i = 0;
+    while (s[i] != '\0')
+    {
+        i++;
+    }
+    return (i);
 }
