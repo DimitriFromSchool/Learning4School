@@ -4,37 +4,15 @@
      ..*█▄▀ █ █░▀░█ █ ░█░ █▀▄ █ ▀▀█ ▄█ █▄▄ █▀█ █▄█ █▄█ █▄▄*✶.
                                  github:DimitriFromSchool::.
   ────────────────────────────────────────────────────────────
-           Project: ft_memset.c
-                      Created: 2024-05-16, 21:49:35 |
-                      Updated: 2024-05-23, 13:59:33 | 
+           Project: ft_bzero.c
+                      Created: 2024-05-23, 13:49:07 |
+                      Updated: 2024-05-23, 14:01:01 | 
   ────────────────────────────────────────────────────────────
  */
-
 #include <stdio.h>
 
-void *ft_memset(void *s, int c, size_t n)
+void bzero(void *s, size_t n)
 {
+    int i;
     unsigned char *buffer;
-    size_t i;
-    
-    buffer = (unsigned char *)s;
-    i = 0;
-    while (i < n)
-    {
-        buffer[i] = c;
-        i++;
-    }
-    return (s);
-}
-
-int main(void)
-{
-    #include <string.h>
-    char    input[] = "Salut";
-    int     value = 68;
-    size_t  length = 6;
-    char    *result = ft_memset(input,value,length);
-    
-    printf ("%s\n", result);
-    printf ("%s", (char*)memset(input,value,length));
 }
