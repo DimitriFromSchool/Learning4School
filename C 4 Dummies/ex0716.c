@@ -4,26 +4,19 @@
      ..*█▄▀ █ █░▀░█ █ ░█░ █▀▄ █ ▀▀█ ▄█ █▄▄ █▀█ █▄█ █▄█ █▄▄*✶.
                                  github:DimitriFromSchool::.
   ────────────────────────────────────────────────────────────
-           Project: ex0712bonus.c
-                      Created: 2024-05-23, 20:21:57 |
-                      Updated: 2024-05-23, 20:39:44 | 
+           Project: ex0716.c
+                      Created: 2024-05-23, 20:41:42 |
+                      Updated: 2024-05-23, 20:44:24 | 
   ────────────────────────────────────────────────────────────
  */
-
 #include <stdio.h>
-
-void nombre(int *n)
-{
-    *n = 8;
-}
 
 int main(void)
 {
-    int er = 4;
+    char    personne[30];
     
-    printf("%d\n", er);
-    nombre(&er);
-    printf("%d\n", er);
+    printf("Veuillez indiquer votre prénom suivit de votre nom :\n");
+    fgets(personne, 10, stdin);
+    printf("Ravi de vous rencontrer %s", personne);
     return (0);
-    
 }

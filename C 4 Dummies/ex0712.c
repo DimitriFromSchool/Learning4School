@@ -6,7 +6,7 @@
   ────────────────────────────────────────────────────────────
            Project: ex0712.c
                       Created: 2024-05-23, 20:09:29 |
-                      Updated: 2024-05-23, 20:19:55 | 
+                      Updated: 2024-05-23, 20:41:17 | 
   ────────────────────────────────────────────────────────────
  */
 
@@ -24,8 +24,6 @@ int main(void)
     printf("Ravi de vous rencontrer %s %s", prenom, nom);
     printf("Quel est votre chiffre favori ?\n");
     scanf("%d", chiffre);
-    printf("%d ? Quel heureux hasard, moi aussi!\n", chiffre);
-    
-    
+    printf("%d ? Quel heureux hasard, moi aussi!\n", chiffre);  
     
 }
