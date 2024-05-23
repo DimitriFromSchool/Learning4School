@@ -4,9 +4,9 @@
      ..*█▄▀ █ █░▀░█ █ ░█░ █▀▄ █ ▀▀█ ▄█ █▄▄ █▀█ █▄█ █▄█ █▄▄*✶.
                                  github:DimitriFromSchool::.
   ────────────────────────────────────────────────────────────
-           Project: ex0703.c
-                      Created: 2024-05-23, 19:12:14 |
-                      Updated: 2024-05-23, 19:25:52 | 
+           Project: ex0705.c
+                      Created: 2024-05-23, 19:20:52 |
+                      Updated: 2024-05-23, 19:31:39 | 
   ────────────────────────────────────────────────────────────
  */
 
@@ -14,10 +14,14 @@
 
 int main(void)
 {
-    int c;
+    int ch;
 
-    printf("Je vais recevoir un caractère :\n");
-    c = getc(stdin);
-    printf("J'ai obtenu le caractère '%c'\n", c);
+    printf("Tapez sur la touche 'Entrée' :\n");
+    getchar(); //getchar est utilisé içi pour marquer une pause et faire executer une action à l'user avant d'afficer le message.
+    ch = 'H';
+    putchar(ch);
+    ch = 'i';
+    putchar(ch);
+    putchar('!');
     return (0);
 }
