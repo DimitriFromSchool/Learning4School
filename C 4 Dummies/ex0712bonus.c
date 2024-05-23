@@ -4,24 +4,26 @@
      ..*█▄▀ █ █░▀░█ █ ░█░ █▀▄ █ ▀▀█ ▄█ █▄▄ █▀█ █▄█ █▄█ █▄▄*✶.
                                  github:DimitriFromSchool::.
   ────────────────────────────────────────────────────────────
-           Project: ex0705.c
-                      Created: 2024-05-23, 19:20:52 |
-                      Updated: 2024-05-23, 19:34:12 | 
+           Project: test.c
+                      Created: 2024-05-23, 20:21:57 |
+                      Updated: 2024-05-23, 20:38:55 | 
   ────────────────────────────────────────────────────────────
  */
 
 #include <stdio.h>
 
+void nombre(int *n)
+{
+    *n = 8;
+}
+
 int main(void)
 {
-    char ch;
-
-    printf("Tapez sur la touche 'Entrée' :\n");
-    getchar(); //getchar est utilisé içi pour marquer une pause et faire executer une action à l'user avant d'afficer le message.
-    ch = 'H';
-    putchar(ch);
-    ch = 'i';
-    putchar(ch);
-    putchar('!');
+    int er = 4;
+    
+    printf("%d\n", er);
+    nombre(&er);
+    printf("%d\n", er);
     return (0);
+    
 }
