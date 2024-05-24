@@ -6,7 +6,7 @@
   ────────────────────────────────────────────────────────────
            Project: memmove.c
                       Created: 2024-05-24, 22:10:34 |
-                      Updated: 2024-05-24, 22:55:21 | 
+                      Updated: 2024-05-24, 23:04:37 | 
   ────────────────────────────────────────────────────────────
  */
 
@@ -42,18 +42,14 @@ int	main(void)
 
 	memmove(dest1, src, sizeof(int) * 10);
 	ft_memmove(dest2, src, sizeof(int) * 10);
-	printf(" Resultat Vraie fonction:\n");
+	printf(" Resultat Vraie fonction: |  Resultat Ma fonction: \n");
+    printf("                          |                        \n");
 	while (i < 10)
 	{
-		printf(" dest[%d] contient : %d \n", i, dest1[i]);
+		printf(" dest[%d] contient : %d \t", i, dest1[i]);
+        printf("  |  dest[%d] contient : %d \n", i, dest2[i]);
 		i++;
 	}
-	printf(" Resultat Ma fonction:\n");
-	i = 0;
-	while (i < 10)
-	{
-		printf(" dest[%d] contient : %d \n", i, dest2[i]);
-		i++;
-	}
+
 	return (0);
 }
