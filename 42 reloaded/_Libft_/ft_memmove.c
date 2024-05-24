@@ -6,7 +6,7 @@
   ────────────────────────────────────────────────────────────
            Project: memmove.c
                       Created: 2024-05-24, 22:10:34 |
-                      Updated: 2024-05-24, 22:53:32 | 
+                      Updated: 2024-05-24, 22:55:21 | 
   ────────────────────────────────────────────────────────────
  */
 
@@ -15,7 +15,6 @@
 
 void    *ft_memmove(void *dest, const void *src, size_t n)
 {
-    unsigned char       *temp;
     unsigned char       *destination;
     const unsigned char *source;
     size_t              i;
@@ -28,8 +27,7 @@ void    *ft_memmove(void *dest, const void *src, size_t n)
         return (NULL);
     while (i < n)
     {
-        temp[i] = source[i];
-        destination [i] = temp[i];
+        destination [i] = source[i];
         i++;
     }
     return (dest);
