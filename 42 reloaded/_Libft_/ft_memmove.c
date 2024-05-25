@@ -6,7 +6,7 @@
   ────────────────────────────────────────────────────────────
            Project: memmove.c
                       Created: 2024-05-24, 22:10:34 |
-                      Updated: 2024-05-24, 23:04:37 | 
+                      Updated: 2024-05-25, 20:48:33 | 
   ────────────────────────────────────────────────────────────
  */
 
@@ -25,19 +25,34 @@ void    *ft_memmove(void *dest, const void *src, size_t n)
 
     if (destination == 0 && source == 0)
         return (NULL);
-    while (i < n)
+    if (destination > source)
     {
-        destination [i] = source[i];
-        i++;
+        i = n;
+        while (n > 0)
+            {
+                n --;
+                destination[n] = source[n];
+            }
+    }
+    else
+    {
+        while (i < n)
+        {
+            destination [i] = source[i];
+            i++;
+        }
     }
     return (dest);
+    
 }
 
 int	main(void)
 {
+    // test tableau de int :
+    
 	int	src[10] = {1,2,3,4,5,6,7,8,9,10};
-	int dest1 [10];
-	int	dest2 [10];
+	int dest1 [12];
+	int	dest2 [12];
 	int i = 0;
 
 	memmove(dest1, src, sizeof(int) * 10);
@@ -51,5 +66,17 @@ int	main(void)
 		i++;
 	}
 
+    // test chevauchement chaine de caractères :
+
+    char str[] = "Hello, World!";
+    char str1[] = "Hello, World!";
+    
+    ft_memmove(str + 7, str, 6); 
+    memmove(str1 + 7, str1, 6); 
+    
+    printf("\n#########################################################\n");
+    printf(" Originale : %s\n", str);
+    printf(" Ma Version: %s\n", str1);
+    printf("#########################################################\n");
 	return (0);
 }
