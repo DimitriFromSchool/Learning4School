@@ -4,34 +4,26 @@
      ..*█▄▀ █ █░▀░█ █ ░█░ █▀▄ █ ▀▀█ ▄█ █▄▄ █▀█ █▄█ █▄█ █▄▄*✶.
                                  github:DimitriFromSchool::.
   ────────────────────────────────────────────────────────────
-           Project: ex0912.c
-                      Created: 2024-05-25, 22:42:33 |
-                      Updated: 2024-05-25, 23:03:01 | 
+           Project: ex0915.c
+                      Created: 2024-05-25, 23:10:02 |
+                      Updated: 2024-05-25, 23:21:20 | 
   ────────────────────────────────────────────────────────────
  */
+
 #include <stdio.h>
 
 int main(void)
 {
-    int letter, letter2, letter3;
-    int formateur = 0;
-    
-    for (letter = 'A'; letter <= 'Z'; letter++)
+    float   x = -5;
+
+    while (x <= 5)
     {
-        for (letter2 = 'A'; letter2 <= 'Z'; letter2++)
-        {   
-            for (letter3 = 'A'; letter3 <= 'Z'; letter3++)
-            {
-                printf("%c%c%c\t", letter, letter2, letter3);
-                formateur++;
-                if (formateur == 13)
-                {
-                    puts("\t");
-                    formateur = 0;
-                }
-            }
-        }
+        if ((int)x == x )
+            printf("%1.0f ", x);
+        else
+            printf("%1.1f ", x);
+        x = x + 0.5;
         
     }
-    return (0); 
+    return (0);
 }
