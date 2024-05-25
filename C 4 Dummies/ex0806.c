@@ -6,7 +6,7 @@
   ────────────────────────────────────────────────────────────
            Project: ex0806.c
                       Created: 2024-05-25, 20:53:28 |
-                      Updated: 2024-05-25, 21:02:27 | 
+                      Updated: 2024-05-25, 21:03:18 | 
   ────────────────────────────────────────────────────────────
  */
 
@@ -20,7 +20,7 @@ int main(void)
     
     while (1)
     {
-        printf("Tentez de deviner le chiffre ou nombre secret : ");
+        printf("Tentez de deviner le chiffre ou nombre secret: ");
         scanf("%d", &tentative);
     
         if (tentative == SECRET)
