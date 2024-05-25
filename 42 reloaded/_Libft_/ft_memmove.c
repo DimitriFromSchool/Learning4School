@@ -6,7 +6,7 @@
   ────────────────────────────────────────────────────────────
            Project: memmove.c
                       Created: 2024-05-24, 22:10:34 |
-                      Updated: 2024-05-25, 20:48:33 | 
+                      Updated: 2024-05-25, 20:49:14 | 
   ────────────────────────────────────────────────────────────
  */
 
@@ -27,7 +27,6 @@ void    *ft_memmove(void *dest, const void *src, size_t n)
         return (NULL);
     if (destination > source)
     {
-        i = n;
         while (n > 0)
             {
                 n --;
