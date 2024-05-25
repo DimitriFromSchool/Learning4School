@@ -4,25 +4,24 @@
      ..*█▄▀ █ █░▀░█ █ ░█░ █▀▄ █ ▀▀█ ▄█ █▄▄ █▀█ █▄█ █▄█ █▄▄*✶.
                                  github:DimitriFromSchool::.
   ────────────────────────────────────────────────────────────
-           Project: ex0901.c
-                      Created: 2024-05-25, 22:23:10 |
-                      Updated: 2024-05-25, 22:32:59 | 
+           Project: ex0911.c
+                      Created: 2024-05-25, 22:36:35 |
+                      Updated: 2024-05-25, 22:40:47 | 
   ────────────────────────────────────────────────────────────
  */
 #include <stdio.h>
 
 int main(void)
 {
-    int x;
+    int letter, num;
     
-    for (x = 0; x < 10; x++)
+    for (letter = 'A'; letter <= 'G'; letter++)
     {
-        if ( x == 0)
-            printf("Je te le dit...Arrête!\n");
-        else
-            printf("Je te l'ai déjà dit %d fois! \n", x);
+        for (num = 1; num <= 7; num++)
+        {
+            printf("%c%d\t", letter, num);
+        }
+        puts("");
     }
-    printf ("Arrête!!!");
     return (0); 
 }
-
