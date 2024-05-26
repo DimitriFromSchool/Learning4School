@@ -6,7 +6,7 @@
   ────────────────────────────────────────────────────────────
            Project: ft_strchr.c
                       Created: 2024-05-26, 22:54:02 |
-                      Updated: 2024-05-26, 23:14:18 | 
+                      Updated: 2024-05-26, 23:17:15 | 
   ────────────────────────────────────────────────────────────
  */
 
@@ -30,15 +30,14 @@ char *ft_strchr(const char *s, int c)
       cc++;
       return (cc);
     }
-    else
-        return (NULL);
+    return (NULL);
 }
 
 int main(void)
 {
     char text[] = "Hello";
     char text2[] = "Hello";
-    int letter = 108;
+    int letter = 104;
     printf("%s\n",ft_strchr(text, letter));
     printf("%s\n",strchr(text2, letter));
     
