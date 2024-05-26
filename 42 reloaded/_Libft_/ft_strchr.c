@@ -6,7 +6,7 @@
   ────────────────────────────────────────────────────────────
            Project: ft_strchr.c
                       Created: 2024-05-26, 22:54:02 |
-                      Updated: 2024-05-26, 23:20:27 | 
+                      Updated: 2024-05-26, 23:21:14 | 
   ────────────────────────────────────────────────────────────
  */
 
@@ -23,7 +23,7 @@ char *ft_strchr(const char *s, int c)
     while (cc[i] != '\0')
     {
         if (cc[i] == c)
-            return (cc);
+            return (&cc[i]);
         i++;
     }
     return (NULL);
@@ -33,7 +33,7 @@ int main(void)
 {
     char text[] = "Hello";
     char text2[] = "Hello";
-    int letter = 104;
+    int letter = 108;
     printf("%s\n",ft_strchr(text, letter));
     printf("%s\n",strchr(text2, letter));
     
