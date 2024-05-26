@@ -6,7 +6,7 @@
   ────────────────────────────────────────────────────────────
            Project: ft_strchr.c
                       Created: 2024-05-26, 22:54:02 |
-                      Updated: 2024-05-26, 23:17:15 | 
+                      Updated: 2024-05-26, 23:20:27 | 
   ────────────────────────────────────────────────────────────
  */
 
@@ -20,15 +20,11 @@ char *ft_strchr(const char *s, int c)
     
     i = 0;
     cc = (char *)s;
-    while (cc[i] != c)
+    while (cc[i] != '\0')
     {
+        if (cc[i] == c)
+            return (cc);
         i++;
-        cc++;
-    }
-    if (cc[i] == c)
-    {
-      cc++;
-      return (cc);
     }
     return (NULL);
 }
