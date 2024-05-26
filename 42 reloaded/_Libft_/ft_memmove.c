@@ -6,7 +6,7 @@
   ────────────────────────────────────────────────────────────
            Project: memmove.c
                       Created: 2024-05-24, 22:10:34 |
-                      Updated: 2024-05-25, 20:49:14 | 
+                      Updated: 2024-05-25, 21:07:34 | 
   ────────────────────────────────────────────────────────────
  */
 
@@ -23,7 +23,7 @@ void    *ft_memmove(void *dest, const void *src, size_t n)
     source = (const void *) src;
     i = 0;
 
-    if (destination == 0 && source == 0)
+    if (destination == 0 || source == 0)
         return (NULL);
     if (destination > source)
     {
@@ -48,7 +48,6 @@ void    *ft_memmove(void *dest, const void *src, size_t n)
 int	main(void)
 {
     // test tableau de int :
-    
 	int	src[10] = {1,2,3,4,5,6,7,8,9,10};
 	int dest1 [12];
 	int	dest2 [12];
@@ -64,9 +63,7 @@ int	main(void)
         printf("  |  dest[%d] contient : %d \n", i, dest2[i]);
 		i++;
 	}
-
     // test chevauchement chaine de caractères :
-
     char str[] = "Hello, World!";
     char str1[] = "Hello, World!";
     
