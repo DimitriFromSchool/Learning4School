@@ -6,14 +6,14 @@
   ────────────────────────────────────────────────────────────
            Project: ft_memcmp.c
                       Created: 2024-05-28, 23:00:21 |
-                      Updated: 2024-05-28, 23:27:12 | 
+                      Updated: 2024-05-28, 23:29:27 | 
   ────────────────────────────────────────────────────────────
  */
 
 #include<stdio.h>
 #include<string.h>
 
-int memcmp(const void *s1, const void *s2, size_t n)
+int ft_memcmp(const void *s1, const void *s2, size_t n)
 {
     unsigned char   *mem1;
     unsigned char   *mem2;
@@ -24,7 +24,7 @@ int memcmp(const void *s1, const void *s2, size_t n)
 
     if (mem1 == NULL && mem2 == NULL)
         return (0);
-    while (i < n)
+    while (i <= n)
         i++;
     return (mem1[i] - mem2[i]);
 }
@@ -35,7 +35,8 @@ int main (void)
     char    str2[] = "Helloa";
     size_t  n = 5;
 
-    printf("%d", ft_memcmp(str1, str2, n));
-    printf("%d", memcmp(str1, str2, n))
+    printf("%d\n", ft_memcmp(str1, str2, n));
+    printf("%d\n", memcmp(str1, str2, n));
+    return (0);
 }
     
