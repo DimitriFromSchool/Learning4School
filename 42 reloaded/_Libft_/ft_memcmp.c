@@ -6,7 +6,7 @@
   ────────────────────────────────────────────────────────────
            Project: ft_memcmp.c
                       Created: 2024-05-28, 23:00:21 |
-                      Updated: 2024-05-28, 23:29:27 | 
+                      Updated: 2024-05-28, 23:36:48 | 
   ────────────────────────────────────────────────────────────
  */
 
@@ -21,9 +21,7 @@ int ft_memcmp(const void *s1, const void *s2, size_t n)
 
     mem1 = (unsigned char *) s1;
     mem2 = (unsigned char *) s2;
-
-    if (mem1 == NULL && mem2 == NULL)
-        return (0);
+    i = 0;
     while (i <= n)
         i++;
     return (mem1[i] - mem2[i]);
@@ -31,8 +29,8 @@ int ft_memcmp(const void *s1, const void *s2, size_t n)
 
 int main (void)
 {
-    char    str1[] = "Hellob";
-    char    str2[] = "Helloa";
+    char    *str2 = NULL;
+    char    *str1 = NULL;
     size_t  n = 5;
 
     printf("%d\n", ft_memcmp(str1, str2, n));
