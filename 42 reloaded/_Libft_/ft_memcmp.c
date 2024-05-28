@@ -6,7 +6,7 @@
   ────────────────────────────────────────────────────────────
            Project: ft_memcmp.c
                       Created: 2024-05-28, 23:00:21 |
-                      Updated: 2024-05-28, 23:42:38 | 
+                      Updated: 2024-05-28, 23:46:08 | 
   ────────────────────────────────────────────────────────────
  */
 
@@ -29,7 +29,7 @@ int ft_memcmp(const void *s1, const void *s2, size_t n)
 
 int main (void)
 {
-    char    *str1 = "Helloa";
+    char    *str1 = "Fellob";
     char    *str2 = "Hellob";
     size_t  n = 6;
 
