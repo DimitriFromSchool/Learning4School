@@ -6,7 +6,7 @@
   ────────────────────────────────────────────────────────────
            Project: ft_memcmp.c
                       Created: 2024-05-28, 23:00:21 |
-                      Updated: 2024-05-28, 23:48:48 | 
+                      Updated: 2024-05-28, 23:49:33 | 
   ────────────────────────────────────────────────────────────
  */
 
@@ -28,7 +28,7 @@ int ft_memcmp(const void *s1, const void *s2, size_t n)
             return (mem1[i] - mem2[i]);
         i++;
     }
-  return (0);  
+    return (0);  
 }
 
 int main (void)
