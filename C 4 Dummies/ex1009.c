@@ -6,7 +6,7 @@
   ────────────────────────────────────────────────────────────
            Project: ex1009.c
                       Created: 2024-05-30, 23:40:25 |
-                      Updated: 2024-05-30, 23:54:48 | 
+                      Updated: 2024-05-30, 23:56:22 | 
   ────────────────────────────────────────────────────────────
  */
 #include<stdio.h>
@@ -32,7 +32,10 @@ int main(void)
         temp_c = convertir(temp_f);
         printf("%1.1fC correspond à %1.1fF\n" , temp_c, temp_f);
         break;
-        
+    default :
+        printf("Votre Choix semble incorrect");
+    }
+    
 }
 
 float convertir(float f)
