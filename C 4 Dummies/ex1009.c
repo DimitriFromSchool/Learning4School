@@ -6,7 +6,7 @@
   ────────────────────────────────────────────────────────────
            Project: ex1009.c
                       Created: 2024-05-30, 23:40:25 |
-                      Updated: 2024-05-31, 15:13:16 | 
+                      Updated: 2024-05-31, 15:35:46 | 
   ────────────────────────────────────────────────────────────
  */
 #include<stdio.h>
@@ -62,16 +62,10 @@ void    pickyourChoice(char *choixConversion)
 
 float convert2C(float f)
 {
-    float t;
-
-    t = (f - 32) / 1.8;
-    return (t);
+    return (f - 32) / 1.8;
 }
 
 float convert2F(float c)
 {
-    float t;
-
-    t = (c * 1.8) + 32;
-    return (t);
+       return (c * 1.8) + 32;
 }
