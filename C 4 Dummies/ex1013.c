@@ -6,7 +6,7 @@
   ────────────────────────────────────────────────────────────
            Project: ex1013.c
                       Created: 2024-05-31, 15:53:00 |
-                      Updated: 2024-05-31, 16:05:00 | 
+                      Updated: 2024-05-31, 16:11:28 | 
   ────────────────────────────────────────────────────────────
  */
 
@@ -36,9 +36,9 @@ void limiter(int stop)
         {
             puts("Vous avez gagné!");
             return;
-        }
+        }   
+        puts("Je gagne !");
     }
-    puts("Je gagne !");
 }
 
 int verifier(int num)
