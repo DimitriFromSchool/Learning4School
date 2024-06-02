@@ -6,7 +6,7 @@
   ────────────────────────────────────────────────────────────
            Project: ex1109.c
                       Created: 2024-06-02, 22:01:25 |
-                      Updated: 2024-06-02, 22:05:14 | 
+                      Updated: 2024-06-02, 22:07:34 | 
   ────────────────────────────────────────────────────────────
  */
 
@@ -18,13 +18,13 @@ int main(void)
     
     alpha = 501;
     printf("alpha = %1.1f\n", alpha);
-    alpha = alpha + 99;
+    alpha += 99;
     printf("alpha = %1.1f\n", alpha);
-    alpha = alpha - 250;
+    alpha -= 250;
     printf("alpha = %1.1f\n", alpha);
-    alpha = alpha / 82;
+    alpha /= 82;
     printf("alpha = %1.1f\n", alpha);
-    alpha = alpha * 4.3;
+    alpha *= 4.3;
     printf("alpha = %1.1f\n", alpha);
     return (0);
 }
