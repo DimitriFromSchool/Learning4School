@@ -6,7 +6,7 @@
   ────────────────────────────────────────────────────────────
            Project: ex1111.c
                       Created: 2024-06-03, 23:20:53 |
-                      Updated: 2024-06-03, 23:26:18 | 
+                      Updated: 2024-06-03, 23:34:48 | 
   ────────────────────────────────────────────────────────────
  */
 
@@ -20,6 +20,6 @@ int main(void)
     printf("Indiquez une valeur factionnaire :");
     scanf("%f", &valeur);
     resultat = sqrt(valeur);
-    printf("%.2f puissance cubique = %.2f\n", valeur, resultat);
+    printf("%.2f Racine carrée de = %.2f\n", valeur, resultat);
     return (0);
 }
