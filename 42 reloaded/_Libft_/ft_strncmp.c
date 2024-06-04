@@ -4,27 +4,25 @@
      ..*█▄▀ █ █░▀░█ █ ░█░ █▀▄ █ ▀▀█ ▄█ █▄▄ █▀█ █▄█ █▄█ █▄▄*✶.
                                  github:DimitriFromSchool::.
   ────────────────────────────────────────────────────────────
-           Project: ft_strnstr.c
-                      Created: 2024-05-28, 23:50:54 |
-                      Updated: 2024-05-29, 00:42:46 | 
+           Project: ft_strncmp.c
+                      Created: 2024-06-04, 21:52:52 |
+                      Updated: 2024-06-04, 22:09:10 | 
   ────────────────────────────────────────────────────────────
  */
 
-#include<stdio.h>
-#include <bsd/string.h> 
+#include <stdio.h>
+#include <string.h>
 
-/*char *ft_strnstr(const char *haystack, const char *needle, size_t len)
+/*int ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-    return(NULL);
+    return ();
 }*/
 
 int main(void)
 {
-    char    *tosearch =  "Ich bin groß und stark mein Freund";
-    char    *tofind   =  "groß und stark";
-    size_t  len = 24;
+    char *s1 = "Coucou le monde";
+    char *s2 = "Coucou la terre";
+    size_t n =  12;
     
-    printf("%s", strnstr(tosearch, tofind, len));
-
-    return (0);
+    printf("%d \n", strncmp(s1,s2,n));
 }
