@@ -6,7 +6,7 @@
   ────────────────────────────────────────────────────────────
            Project: ft_strncmp.c
                       Created: 2024-06-04, 21:52:52 |
-                      Updated: 2024-06-05, 08:38:36 | 
+                      Updated: 2024-06-05, 08:45:40 | 
   ────────────────────────────────────────────────────────────
  */
 
@@ -22,7 +22,7 @@ int ft_strncmp(const char *s1, const char *s2, size_t n)
     str1 = (unsigned char *) s1;
     str2 = (unsigned char *) s2;
     i = 0;
-    while (str1[i] != '\0' && i < n)
+    while (str1[i] != '\0' && str1[i] != '\0' && i < n)
     {
         i++;
     }
@@ -32,9 +32,9 @@ int ft_strncmp(const char *s1, const char *s2, size_t n)
 int main(void)
 {
     char *s1 = "Coucou";
-    char *s2 = "Coucou!la terra";
-    size_t n =  12;
-    
-    printf("%d \n", ft_strncmp(s1,s2,n));
+    char *s2 = NULL;
+    size_t n = 0;
+    printf("ft_strncmp : %d \n", ft_strncmp(s1,s2,n));
+    //printf("strncmp : %d \n", strncmp(s1,s2,n));
     return (0);
 }
