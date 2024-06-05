@@ -6,7 +6,7 @@
   ────────────────────────────────────────────────────────────
            Project: ft_strncmp.c
                       Created: 2024-06-04, 21:52:52 |
-                      Updated: 2024-06-05, 12:56:28 | 
+                      Updated: 2024-06-05, 12:57:16 | 
   ────────────────────────────────────────────────────────────
  */
 
@@ -34,8 +34,8 @@ int ft_strncmp(const char *s1, const char *s2, size_t n)
 
 int main(void)
 {
-    char *s1 = NULL;
-    char *s2 = NULL;
+    char *s1 = "Coucou";
+    char *s2 = "Coucoi";
     size_t n = 0;
     printf("ft_strncmp : %d \n", ft_strncmp(s1,s2,n));
     printf("strncmp : %d \n", strncmp(s1,s2,n));
