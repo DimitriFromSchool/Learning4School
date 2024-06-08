@@ -4,20 +4,23 @@
      ..*█▄▀ █ █░▀░█ █ ░█░ █▀▄ █ ▀▀█ ▄█ █▄▄ █▀█ █▄█ █▄█ █▄▄*✶.
                                  github:DimitriFromSchool::.
   ────────────────────────────────────────────────────────────
-           Project: ex0806.c
-                      Created: 2024-05-25, 20:53:28 |
-                      Updated: 2024-06-08, 23:18:24 | 
+           Project: ex1121.c
+                      Created: 2024-06-08, 23:17:51 |
+                      Updated: 2024-06-08, 23:22:30 | 
   ────────────────────────────────────────────────────────────
  */
 
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
-#define SECRET 17
+#define SECRET (rand()%20 + 1);
 
 int main(void)
 {
     int tentative;
     int nombreEssais = 1;
+    srand((unsigned int)time(NULL));
     
     while (1)
     {
