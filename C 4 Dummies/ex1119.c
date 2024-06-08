@@ -6,7 +6,7 @@
   ────────────────────────────────────────────────────────────
            Project: ex1119.c
                       Created: 2024-06-08, 22:48:06 |
-                      Updated: 2024-06-08, 22:53:56 | 
+                      Updated: 2024-06-08, 22:55:15 | 
   ────────────────────────────────────────────────────────────
  */
 
@@ -16,7 +16,7 @@
 int main(void)
 {
     unsigned seed;
-    int r, a, b;
+    int r, a, b, valeur;
     
     printf("Entrez une valeur pour la seed : ");
     scanf(" %u", &seed);
@@ -27,7 +27,8 @@ int main(void)
        for(b=0; b < 5; b++)
        {
          r = rand();
-         printf("%d\t", r);
+         valeur = r%100;
+         printf("%d\t", valeur);
        }
        putchar('\n');
     }
