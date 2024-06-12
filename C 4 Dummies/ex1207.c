@@ -6,7 +6,7 @@
   ────────────────────────────────────────────────────────────
            Project: ex1207.c
                       Created: 2024-06-12, 23:33:36 |
-                      Updated: 2024-06-12, 23:51:08 | 
+                      Updated: 2024-06-12, 23:56:35 | 
   ────────────────────────────────────────────────────────────
  */
 
@@ -21,9 +21,9 @@ int main (void)
     int i;
 
     i = 0;
-    while ( base[i] != '\0' )
+    while ( i < 7 )
     {
-        racine[i] = sqrt(base[i]);
+        racine[i] = (int)sqrt(base[i]);
         printf("%d \t", base[i]);
         printf("%d \n", racine[i]);
         i++;
