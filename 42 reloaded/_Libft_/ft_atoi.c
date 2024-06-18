@@ -6,7 +6,7 @@
   ────────────────────────────────────────────────────────────
            Project: ft_atoi.c
                       Created: 2024-06-05, 12:58:25 |
-                      Updated: 2024-06-18, 22:20:45 | 
+                      Updated: 2024-06-18, 22:33:18 | 
   ────────────────────────────────────────────────────────────
  */
 
@@ -17,6 +17,7 @@ int ft_atoi(const char *str)
 {
     int i;
     int num;
+    int result;
     i = 0;
     num = 0;
 
@@ -31,15 +32,18 @@ int ft_atoi(const char *str)
             return (1);
         i++;
     }
-      //num = str[i] - 48;
-    
-    
-    return (i);
+    while ( i > 0)
+    {
+        // Créer dizaine(num);
+        result = num  + (str[i] - 48);
+        i--;
+    }
+    return (result);
 }
 
 int main(void)
 {
-    char *ascii = "483647";
+    char *ascii = "++483647";
     int result = ft_atoi(ascii);
 
     printf("%d \n", result);
