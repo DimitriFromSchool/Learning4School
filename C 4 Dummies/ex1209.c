@@ -6,7 +6,7 @@
   ────────────────────────────────────────────────────────────
            Project: ex1209.c
                       Created: 2024-06-13, 23:36:43 |
-                      Updated: 2024-06-18, 21:10:06 | 
+                      Updated: 2024-06-19, 23:58:31 | 
   ────────────────────────────────────────────────────────────
  */
 
@@ -24,7 +24,7 @@ int main (void)
         i++;
     }
     putchar('\n');
-    return (0);
+    return 0;
 }
 
 //After a little weekend in paris, back to the basics . Wait and see...
