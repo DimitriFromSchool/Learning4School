@@ -6,7 +6,7 @@
   ────────────────────────────────────────────────────────────
            Project: ex1209.c
                       Created: 2024-06-13, 23:36:43 |
-                      Updated: 2024-06-19, 23:58:31 | 
+                      Updated: 2024-06-20, 11:23:56 | 
   ────────────────────────────────────────────────────────────
  */
 
@@ -14,17 +14,12 @@
 
 int main (void)
 {
-    char phrase[] = "Texte insignifiant";
-    int i;
-
-    i = 0;
-    while ( phrase[i] != '\0' )
-    {
-        putchar(phrase[i]);
-        i++;
-    }
-    putchar('\n');
-    return 0;
+    char prenom[16];
+    
+    printf("Quel est votre prénom ?");
+    fgets(prenom, 16, stdin);
+    printf("Ravi de vous rencontrer, %s!\n", prenom);
+    return (0);
 }
 
 //After a little weekend in paris, back to the basics . Wait and see...
