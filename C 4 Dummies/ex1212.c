@@ -4,9 +4,9 @@
      ..*█▄▀ █ █░▀░█ █ ░█░ █▀▄ █ ▀▀█ ▄█ █▄▄ █▀█ █▄█ █▄█ █▄▄*✶.
                                  github:DimitriFromSchool::.
   ────────────────────────────────────────────────────────────
-           Project: ex1211.c
-                      Created: 2024-06-21, 23:22:36 |
-                      Updated: 2024-06-21, 23:27:12 | 
+           Project: ex1212.c
+                      Created: 2024-06-21, 23:26:33 |
+                      Updated: 2024-06-21, 23:34:02 | 
   ────────────────────────────────────────────────────────────
  */
 
@@ -14,14 +14,14 @@
 
 int main (void)
 {
-    char prenom[12];
-    char nom[12];
+    char prenom[16];
+    char nom[16];
     
     printf("Quel est votre prénom ? : ");
-    scanf("%s", prenom);
+    scanf("%15s", prenom);
     printf("Quel est votre nom ? : ");
-    scanf("%s", nom);
+    scanf("%15s", nom);
 
-    printf("Ravi de vous rencontrer, %s %s!\n", prenom, nom);
+    printf("Ravi de vous rencontrer, %.4s %.3s!\n", prenom, nom);
     return (0);
 }
