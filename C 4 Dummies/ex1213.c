@@ -6,7 +6,7 @@
   ────────────────────────────────────────────────────────────
            Project: ex1213.c
                       Created: 2024-06-22, 23:47:58 |
-                      Updated: 2024-06-23, 00:27:44 | 
+                      Updated: 2024-06-23, 00:58:24 | 
   ────────────────────────────────────────────────────────────
  */
 
@@ -27,9 +27,9 @@ int main(void)
     putchar('\n');
     
 /* Tri du tableau */
-    for(j = 0;j < TAILLE-1;j++)
+    for (j = 0;j < TAILLE-1;j++) 
     {
-            for( k =j + 1; k < TAILLE-1; k++)
+            for( k = j + 1; k < TAILLE; k++)
             {
                 if( tabulles[j] > tabulles[k])
                 {
