@@ -6,7 +6,7 @@
   ────────────────────────────────────────────────────────────
            Project: ex1213.c
                       Created: 2024-06-22, 23:47:58 |
-                      Updated: 2024-06-23, 00:18:34 | 
+                      Updated: 2024-06-23, 00:27:44 | 
   ────────────────────────────────────────────────────────────
  */
 
@@ -17,7 +17,8 @@
 int main(void)
 {
     int tabulles[] = { 95, 60, 6, 87, 50, 24 };
-    int valeur1, valeur2, temp, i;
+    int temp;
+    int i ,j ,k;
     
     /*Affiche le tableau initial */
     puts("Tableau de départ : ");
@@ -26,15 +27,15 @@ int main(void)
     putchar('\n');
     
 /* Tri du tableau */
-    for( valeur2 = 0; valeur2 < TAILLE-1; valeur2++)
+    for(j = 0;j < TAILLE-1;j++)
     {
-            for( valeur1 = valeur2 + 1; valeur1 < TAILLE-1; valeur1++)
+            for( k =j + 1; k < TAILLE-1; k++)
             {
-                if( tabulles[valeur2] > tabulles[valeur1])
+                if( tabulles[j] > tabulles[k])
                 {
-                    temp = tabulles[valeur2];
-                    tabulles[valeur2] = tabulles[valeur1];
-                    tabulles[valeur1] = temp;
+                    temp = tabulles[j];
+                    tabulles[j] = tabulles[k];
+                    tabulles[k] = temp;
                 }
         }
         
