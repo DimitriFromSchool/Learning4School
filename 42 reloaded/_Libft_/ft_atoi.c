@@ -6,7 +6,7 @@
   ────────────────────────────────────────────────────────────
            Project: ft_atoi.c
                       Created: 2024-06-05, 12:58:25 |
-                    Updated: 2024-07-17, 1:42:47 |
+                    Updated: 2024-07-17, 1:56:29 |
   ────────────────────────────────────────────────────────────
  */
 
@@ -24,16 +24,16 @@ int ft_atoi(const char *str)
     sign = 1;
 
     while ( str[i] == '\n' || str[i] == '\t' || str[i] == '\f' || str[i] == '\r' || str[i] == '\v' || str[i] == ' ')
-
-    if ( str[i] == '+' || str[i] == '-' )
+        i++;
+    if ( str[i] == '-' || str[i] == '+' )
     {
         if (str[i] == '-')
             sign = -1;
         i++;
     }
-    while ( str[i] => 48 || str[i] <= 57)
+    while ( str[i] >= 48 && str[i] <= 57)
     {
-        result = result * 10 + str[i] - 48 
+        result = (result * 10) + (str[i] - 48);
         i++;
     }
     return (result * sign);
@@ -41,7 +41,7 @@ int ft_atoi(const char *str)
 
 int main(void)
 {
-    char *ascii = "++483647";
+    char *ascii = "+483a647";
     int result = ft_atoi(ascii);
 
     printf("%d \n", result);
