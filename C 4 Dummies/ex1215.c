@@ -6,7 +6,7 @@
 ────────────────────────────────────────────────────────────
          Project: ex1215.c
                     Created: 2024-07-17, 11:53:09 |
-                    Updated: 2024-07-17, 12:00:42 |
+                    Updated: 2024-07-17, 12:04:00 |
 ────────────────────────────────────────────────────────────
 */
 
@@ -26,16 +26,12 @@ int main(void)
     
     //srand(time(NULL));
     
-    /*Remplit le tableau initial 
-    for(i = 0; i < TAILLE; i++)
-    {
-        tabulles[i] = rand() % 101;
-    }*/
+
     /*Affiche le tableau initial */
     puts("Tableau de départ : ");
     for(i = 0; i < TAILLE; i++)
     {
-        tabulles[i] = rand() % 101;
+        //tabulles[i] = rand() % 101;
         printf("%d\t", tabulles[i] );
     }
     putchar('\n');
@@ -45,7 +41,7 @@ int main(void)
     {
             for( k = j + 1; k < TAILLE; k++)
             {
-                if( tabulles[j] > tabulles[k])
+                if( tabulles[j] < tabulles[k])
                 {
                     temp = tabulles[j];
                     tabulles[j] = tabulles[k];
