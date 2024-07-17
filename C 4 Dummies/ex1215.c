@@ -4,27 +4,33 @@
    ..*█▄▀ █ █░▀░█ █ ░█░ █▀▄ █ ▀▀█ ▄█ █▄▄ █▀█ █▄█ █▄█ █▄▄*✶.
                                github:DimitriFromSchool::.
 ────────────────────────────────────────────────────────────
-         Project: ex1214.c
-                    Created: 2024-07-17, 11:27:02 |
-                    Updated: 2024-07-17, 12:01:39 |
+         Project: ex1215.c
+                    Created: 2024-07-17, 11:53:09 |
+                    Updated: 2024-07-17, 12:00:42 |
 ────────────────────────────────────────────────────────────
 */
+
 
 #include <stdio.h> 
 #include <stdlib.h>
 #include <time.h>
 
-#define TAILLE 40
+#define TAILLE 4
 
 
 int main(void)
 {
-    int tabulles[40];    
+    int tabulles[TAILLE] = {3,5,4,1};    
     int temp;
     int i ,j ,k;
     
-    srand(time(NULL));
-
+    //srand(time(NULL));
+    
+    /*Remplit le tableau initial 
+    for(i = 0; i < TAILLE; i++)
+    {
+        tabulles[i] = rand() % 101;
+    }*/
     /*Affiche le tableau initial */
     puts("Tableau de départ : ");
     for(i = 0; i < TAILLE; i++)
@@ -34,7 +40,7 @@ int main(void)
     }
     putchar('\n');
     
-/* Tri du tableau */
+/* Tri du tableau par ordre decroissant */
     for (j = 0;j < TAILLE-1;j++) 
     {
             for( k = j + 1; k < TAILLE; k++)
@@ -58,4 +64,3 @@ for ( i = 0; i < TAILLE; i++)
 
     return (0);
 }
-
