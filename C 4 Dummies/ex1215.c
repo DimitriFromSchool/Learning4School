@@ -6,7 +6,7 @@
 ────────────────────────────────────────────────────────────
          Project: ex1215.c
                     Created: 2024-07-17, 11:53:09 |
-                    Updated: 2024-07-17, 12:04:00 |
+                    Updated: 2024-07-17, 12:27:10 |
 ────────────────────────────────────────────────────────────
 */
 
@@ -37,7 +37,7 @@ int main(void)
     putchar('\n');
     
 /* Tri du tableau par ordre decroissant */
-    for (j = 0;j < TAILLE-1;j++) 
+    for (j = 0;j < TAILLE - 1;j++) 
     {
             for( k = j + 1; k < TAILLE; k++)
             {
