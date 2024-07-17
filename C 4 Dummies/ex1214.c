@@ -6,7 +6,7 @@
 ────────────────────────────────────────────────────────────
          Project: ex1214.c
                     Created: 2024-07-17, 11:27:02 |
-                    Updated: 2024-07-17, 11:42:50 |
+                    Updated: 2024-07-17, 11:48:25 |
 ────────────────────────────────────────────────────────────
 */
 
@@ -14,24 +14,28 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define TAILLE 6
+#define TAILLE 40
 
-srand(time( NULL));
+
 int main(void)
 {
     int tabulles[40];    
     int temp;
     int i ,j ,k;
     
+    srand(time(NULL));
     /*Remplit le tableau initial */
-    for(i = 0; i < 40; i++)
+    for(i = 0; i < TAILLE; i++)
     {
         tabulles[i] = rand() % 101;
     }
     /*Affiche le tableau initial */
     puts("Tableau de départ : ");
     for(i = 0; i < TAILLE; i++)
-     printf("%d\t", tabulles[i] );
+    {
+        tabulles[i] = rand() % 101;
+        printf("%d\t", tabulles[i] );
+    }
     putchar('\n');
     
 /* Tri du tableau */
