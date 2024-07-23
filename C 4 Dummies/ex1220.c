@@ -4,22 +4,26 @@
    ..*█▄▀ █ █░▀░█ █ ░█░ █▀▄ █ ▀▀█ ▄█ █▄▄ █▀█ █▄█ █▄█ █▄▄*✶.
                                github:DimitriFromSchool::.
 ────────────────────────────────────────────────────────────
-         Project: ex1219.c
-                    Created: 2024-07-23, 1:14:52 |
-                    Updated: 2024-07-23, 1:18:13 |
+         Project: ex1220.c
+                    Created: 2024-07-23, 1:18:38 |
+                    Updated: 2024-07-23, 1:19:53 |
 ────────────────────────────────────────────────────────────
 */
 
+
 #include <stdio.h>
 
-#define TAILLE 3
+#define TAILLE 6
 
 int main (void)
 {
-    char president[TAILLE][8] = {
+    char president[TAILLE][10] = {
         "Sarkozy",
         "Coty",
-        "Grevy"
+        "Grevy",
+        "Mitterrand",
+        "Chirac",
+        "Pompidou"
     };
     int x;
     
