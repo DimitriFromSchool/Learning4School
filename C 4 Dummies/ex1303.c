@@ -4,9 +4,9 @@
    ..*█▄▀ █ █░▀░█ █ ░█░ █▀▄ █ ▀▀█ ▄█ █▄▄ █▀█ █▄█ █▄█ █▄▄*✶.
                                github:DimitriFromSchool::.
 ────────────────────────────────────────────────────────────
-         Project: ex1302.c
-                    Created: 2024-07-26, 11:12:24 |
-                    Updated: 2024-07-26, 11:22:39 |
+         Project: ex1303.c
+                    Created: 2024-07-26, 11:22:51 |
+                    Updated: 2024-07-26, 11:22:54 |
 ────────────────────────────────────────────────────────────
 */
 
@@ -29,15 +29,18 @@ int main (void)
         if(isalpha(str[i]))
             alpha++;
         if(isblank(str[i]))
+        {
             blank++;
+            total++;
+        }
         if(ispunct(str[i]))
             punct++;
         if(islower(str[i]))
             lower++;
         if(isupper(str[i]))
             upper++;
-        if(isupper(str[i]))
-            upper++;
+        if(isascii(str[i]))
+            total++;
         i++;
     }
     
@@ -49,6 +52,8 @@ int main (void)
     printf("%d lettres majuscules\n", upper);
     printf("%d signes de ponctuations\n", punct);
     printf("%d espaces\n", blank);
+    putchar('\n');
+    printf("Nombres de charactères : %d\n", total);
     
     return (0);
 }
