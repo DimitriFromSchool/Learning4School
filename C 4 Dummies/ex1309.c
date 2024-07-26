@@ -6,7 +6,7 @@
 ────────────────────────────────────────────────────────────
          Project: ex1309.c
                     Created: 2024-07-26, 1:52:32 |
-                    Updated: 2024-07-26, 1:52:42 |
+                    Updated: 2024-07-26, 1:55:04 |
 ────────────────────────────────────────────────────────────
 */
 
@@ -21,7 +21,7 @@ int main (void)
     printf("Le mot de passe ? ");
     scanf("%s", tabsinput);
 
-    if ((strcmp(tabsinput, password)) == 0)
+    if ((strcasecmp(tabsinput, password)) == 0)
         puts("Mot de passe correct");
     else
         puts("Mot de passe incorrect.");
